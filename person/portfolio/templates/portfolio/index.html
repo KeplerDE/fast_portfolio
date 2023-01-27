@@ -4,7 +4,7 @@
 {% load crispy_forms_tags %}
 {% block content %}
   <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
+  <div id="hero" class="hero route bg-image" style="background-image: url('{% static '/portfolio/static/img/hero-bg.jpg' %}' )">
     <div class="overlay-itro"></div>
     <div class="hero-content display-table">
       <div class="table-cell">
@@ -614,7 +614,7 @@
 
     <!-- ======= Contact Section ======= -->
 
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url({% static "portfolio/static/img/hero-bg.jpg" %})">
       <div class="overlay-mf"></div>
       <div class="container">
 
